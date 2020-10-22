@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../public/css/style.css">
+</head>
+<style>
+    .product__Main {
+        max-width: 960px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .product__Main .ant-input-number-input {
+        text-align: center;
+        border: 1px solid black;
+    }
+
+    div.product__Main--imageHover {
+        transition-duration: 3s;
+
+        opacity: 1;
+        width: 500px;
+        transition-timing-function: linear;
+        height: 500px;
+    }
+
+    .product__Main--imageHover div:nth-child(2) {
+        transition-duration: 3s;
+        display: none;
+        translate: scale(0, 0);
+        background-color: red;
+        opacity: 0.2;
+        width: 600px;
+        transition-timing-function: linear;
+        height: 600px;
+        transition: display 0.8s ease;
+
+    }
+
+    .product__Main--imageHover:hover div:nth-child(2) {
+        display: block;
+        translate: scale(20, 20);
+
+    }
+
+    .product__Main--imageHover:hover div:nth-child(1) {
+        display: none;
+    }
+
+    div#main {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        background-size: cover;
+
+        border: 1px solid hsla(39, 100%, 2%, 0.36);
+        overflow: hidden;
+        z-index: 2;
+    }
+    div#main:hover>#sub {
+        display: block;
+        border: 13px solid red;
+
+    }
+    div#main:hover>#sub .two{
+        display: block;
+        border: 13px solid red;
+
+    }
+
+    div#sub {
+        border: 1px solid red;
+
+        transition-duration: 3s;
+        -webkit-transition-duration: 3s;
+        -moz-transition-duration: 3s;
+    }div#sub .two {
+        display: none;
+    }
+</style>
+
+<body>
+
+    <div id="main">
+        <div id="sub">
+            <img style="width: 50%" class="one"
+                src="https://static.wixstatic.com/media/8c0f2e_d55fb84441d3408c9971611b2e5b8b11~mv2.jpg/v1/fill/w_151,h_151,al_c,q_80,usm_0.66_1.00_0.01/8c0f2e_d55fb84441d3408c9971611b2e5b8b11~mv2.webp" />
+            <img style="width: 50%" class="two"
+                src="https://static.wixstatic.com/media/8c0f2e_93cfaf7aa9f348f595bc26b0b9a185b6~mv2.jpg/v1/fill/w_151,h_151,al_c,q_80,usm_0.66_1.00_0.01/8c0f2e_93cfaf7aa9f348f595bc26b0b9a185b6~mv2.webp" />
+
+        </div>
+    </div>
+</body>
+
+</html>
